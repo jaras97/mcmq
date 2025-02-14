@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399.1 499.33">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-5 {
+        font-family: MSReferenceSansSerif, 'MS Reference Sans Serif';
+        font-size: 20px;
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-6 {
+        font-family: TAN-MONCHERI, 'TAN - MON CHERI';
+        font-size: 24px;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(27.8 468.62)"><tspan class="cls-6"><tspan x="0" y="0">M. CAMILA MORAL</tspan><tspan class="cls-4" x="271.7" y="0">E</tspan><tspan x="290.72" y="0">S Q</tspan></tspan><tspan class="cls-5"><tspan x="38.24" y="26">Arquitectu</tspan><tspan class="cls-3" x="141.8" y="26">r</tspan><tspan x="149.99" y="26">a e interiorismo</tspan></tspan></text>
+  <path class="cls-2" d="M384.96,399.58L115.51,130.15v166.82h-20V106.01c0-4.04,2.44-7.69,6.17-9.24,3.73-1.55,8.04-.69,10.9,2.17l286.52,286.5-14.14,14.14Z"/>
+  <path class="cls-2" d="M306.52,269.15V106.02c0-4.04-2.43-7.69-6.16-9.24-3.74-1.55-8.04-.69-10.9,2.17l-76.61,76.6,14.17,14.11,59.51-59.5v119s19.99,19.99,19.99,19.99Z"/>
+  <path class="cls-2" d="M201.01,402.51c-53.78,0-104.29-20.88-142.21-58.8C20.88,305.78,0,255.28,0,201.5S20.88,97.22,58.81,59.3C96.73,21.39,147.23.51,201.01.51c35.38,0,70.16,9.27,100.56,26.82,4.78,2.76,6.42,8.88,3.66,13.66-2.76,4.78-8.88,6.42-13.66,3.66-27.36-15.79-58.68-24.14-90.56-24.14C101.2,20.51,20,101.7,20,201.5s81.2,181.01,181.01,181.01c31.88,0,63.19-8.35,90.55-24.16,4.78-2.76,10.9-1.12,13.66,3.66,2.76,4.78,1.12,10.9-3.66,13.66-30.4,17.56-65.17,26.84-100.56,26.84Z"/>
+</svg>

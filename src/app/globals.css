@@ -1,21 +1,60 @@
+@font-face {
+  font-family: 'TAN Mon Cheri';
+  src: url('/fonts/tan-mon-cheri.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer utilities {
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .animate-fade-up {
+    animation: fade-up 1s ease-out forwards;
+  }
+  .animate-slow-zoom-out {
+    animation: slow-zoom-out 5s ease-out forwards;
   }
 }
 
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slow-zoom-out {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Efecto de zoom out para Swiper */
+.swiper-slide-active .scale-105 {
+  transform: scale(1);
+}
+
+/* Variables de colores */
+:root {
+  --primary: #fee2ce;
+  --secondary: #f58e8a;
+  --accent: #2a3e91;
+  --highlight: #90d3ef;
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply font-display;
 }

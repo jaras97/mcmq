@@ -9,8 +9,16 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: "#F58E8A",
+        secondary: "#FEE2CE",
+        accent: "#2A3E91",
+        highlight: "#90D3EF",
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        display: ["TAN Mon Cheri", "cursive"],
+        sans: ["Montserrat", "sans-serif"],
       },
     },
   },
