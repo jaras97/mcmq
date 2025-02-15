@@ -1,34 +1,3 @@
-// 'use client';
-
-// import Image from 'next/image';
-
-// export default function Header() {
-//   return (
-//     <header className=' w-full bg-white shadow-md py-4 px-8 flex justify-between items-center z-50'>
-//       <div>
-//         <Image
-//           src='/logo/LOGO_MCMQ_RO.svg'
-//           alt='Logo'
-//           width={70}
-//           height={50}
-//           unoptimized
-//         />
-//       </div>
-//       <nav>
-//         <ul className='flex space-x-6 text-accent'>
-//           <li className='font-semibold'>HOME</li>
-//           <li className='hover:text-primary transition-colors'>SERVICIOS</li>
-//           <li className='hover:text-primary transition-colors'>PROYECTOS</li>
-//           <li className='hover:text-primary transition-colors'>NOSOTROS</li>
-//         </ul>
-//       </nav>
-//       <button className='bg-primary text-white px-4 py-2 rounded-full font-semibold hover:opacity-80 transition-opacity'>
-//         AGENDA TU LLAMADA
-//       </button>
-//     </header>
-//   );
-// }
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -49,13 +18,21 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <header
-      className={`fixed w-full bg-white transition-all duration-300 ${
+      className={`w-full bg-white transition-all duration-300 ${
         isScrolled ? 'shadow-md py-2' : 'py-4'
       } px-4 md:px-8 flex justify-between items-center z-50`}
     >
-      <div className='h-16 w-16'>
+      <div className='h-16 w-16' onClick={() => scrollToSection('hero')}>
         <Logo color='text-primary' />
       </div>
       {isMenuOpen && (
@@ -70,16 +47,30 @@ export default function Header() {
         } md:static md:h-auto md:w-auto md:shadow-none md:translate-x-0`}
       >
         <ul className='flex flex-col h-full justify-center space-y-6 p-8 md:flex-row md:space-y-0 md:space-x-6 md:p-0'>
-          <li className='font-semibold text-accent'>
-            <Link href='/'>HOME</Link>
+          <li
+            className='hover:text-primary transition-colors cursor-pointer'
+            onClick={() => scrollToSection('hero')}
+          >
+            HOME
           </li>
-          <li className='hover:text-primary transition-colors'>
-            <Link href='/servicios'>SERVICIOS</Link>
+          <li
+            className='hover:text-primary transition-colors cursor-pointer'
+            onClick={() => scrollToSection('services')}
+          >
+            {/* <Link href='/servicios'>SERVICIOS</Link> */}
+            SERVICIOS
           </li>
-          <li className='hover:text-primary transition-colors'>
-            <Link href='/proyectos'>PROYECTOS</Link>
+          <li
+            className='hover:text-primary transition-colors cursor-pointer'
+            onClick={() => scrollToSection('projects')}
+          >
+            {/* <Link href='/proyectos'>PROYECTOS</Link> */}
+            PROYECTOS
           </li>
-          <li className='hover:text-primary transition-colors'>
+          <li
+            className='hover:text-primary transition-colors'
+            onClick={() => scrollToSection('about')}
+          >
             <Link href='/nosotros'>NOSOTROS</Link>
           </li>
         </ul>

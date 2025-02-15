@@ -9,44 +9,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .animation-delay-300 {
-    animation-delay: 300ms;
-  }
-
-  .animate-fade-up {
-    animation: fade-up 1s ease-out forwards;
-  }
-  .animate-slow-zoom-out {
-    animation: slow-zoom-out 5s ease-out forwards;
-  }
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slow-zoom-out {
-  from {
-    transform: scale(1.1);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-/* Efecto de zoom out para Swiper */
-.swiper-slide-active .scale-105 {
-  transform: scale(1);
-}
-
 /* Variables de colores */
 :root {
   --primary: #fee2ce;
