@@ -1,5 +1,6 @@
 'use client';
 
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 
 export default function LangLayout({
@@ -11,6 +12,7 @@ export default function LangLayout({
     <>
       <Header />
       {children}
+      <Footer />
     </>
   );
 }

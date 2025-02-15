@@ -1,3 +1,4 @@
+import AboutSection from '@/components/AboutSection';
 import HeroCarousel from '@/components/hero-carousel';
 import ProjectsGallery from '@/components/ProjectsGallery';
 import ServicesSection from '@/components/ServicesSection';
@@ -45,6 +46,7 @@ const page = () => {
       <HeroCarousel />
       <ServicesSection services={services} />
       <ProjectsGallery images={projectImages} />
+      <AboutSection />
     </div>
   );
 };
